@@ -64,7 +64,6 @@ p {
 }
 
 .body-block h2 {
-    background-color: slategrey;
     padding: 1em;
     margin: auto;
 }
@@ -122,9 +121,17 @@ p {
     background: linear-gradient(skyblue, rgb(36, 135, 176));
 }
 
+#projects h2 {
+    background-color: rgba(155, 155, 155, 0.5);
+}
+
 #papers {
     text-align: left;
     float: left;
     min-height: 100 px;
     background: linear-gradient(rgb(36, 135, 176), rgb(46, 121, 151));
+}
+
+#papers h2 {
+    background-color: rgba(155, 155, 155, 0.75);
 }

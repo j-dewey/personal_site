@@ -144,10 +144,13 @@ document.querySelectorAll("#interactive-bio-nav button").forEach((btn) => {
 window.addEventListener("scroll", () => {
   const navBar = document.getElementById("page-nav");
   const landing = document.getElementById("landing");
-  // past landing, switch to absoloute nav bar
-  if (window.scrollY > landing.offsetHeight + landing.offsetTop) {
-    //navBar.className = "page-nav-scrolled";
+  const name = document.getElementById("page-nav-name");
+
+  if (window.scrollY < landing.offsetHeight + landing.offsetTop) {
+    navBar.setAttribute("class", "page-nav-initial");
+    name.innerHTML = "";
+  } else if (window.scrollY > landing.offsetHeight + landing.offsetTop) {
+    navBar.setAttribute("class", "page-nav-scrolled");
+    name.innerHTML = "JDewey";
   }
-  // when in project, switch out projects button with Project header
-  // same for when in papers
 });

@@ -1,4 +1,4 @@
-.page-nav-initial {
+#page-nav {
     padding: 0%;
     margin: auto;
     justify-content: center;
@@ -8,9 +8,20 @@
 
     top: 0;
     position: sticky;
+    transition: all 0.5s linear;
 }
 
-#page-nav {
+.page-nav-scrolled {
+    background-color: rgba(122, 122, 122, 0.5);
+}
+
+.page-nav-scrolled nav {
+    margin: 0.5em;
+}
+
+#page-nav-name {
+    margin: auto;
+    padding-right: 1em;
 }
 
 #page-nav nav {
@@ -22,4 +33,6 @@
     background-color: white;
     margin: 0.25em;
     border-radius: 10%;
+    text-decoration: none;
+    color: inherit;
 }
