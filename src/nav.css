@@ -1,0 +1,25 @@
+.page-nav-initial {
+    padding: 0%;
+    margin: auto;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    display: flex;
+
+    top: 0;
+    position: sticky;
+}
+
+#page-nav {
+}
+
+#page-nav nav {
+    display: flex;
+}
+
+#page-nav a {
+    width: 10em;
+    background-color: white;
+    margin: 0.25em;
+    border-radius: 10%;
+}

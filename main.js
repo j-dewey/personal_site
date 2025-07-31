@@ -101,23 +101,27 @@ const bioBlurbs = {
   `,
   Runner: `
   Running has been a near-daily part of my life for the past 7 years. Here's some PRs:
-  <ul>
-  <li>800m: 2:23 </li>
+  <ul style="margin-top:0.25em;">
   <li>1600m: 5:03 </li>
   <li>5k: 19:30 </li>
-  <li>8k: 30:something </li>
+  <li>8k: 30:something (So yeah, I'm not too competetive)</li>
   </ul>
   `,
-  Programmer: ``,
+  Programmer: `
+  My programming journey arguably started in the 4th grade when I first learned
+  Scratch. My first "real" programming language was Python which I taught myself in
+  8th grade. Since then I've also picked up Rust, C, some C++, and some Java. Below you
+  can find some recent and ongoing projects!
+  `,
 };
 
 export function setBioBlurb(version) {
+  const blurbSection = document.getElementById("interactive-bio-text");
   blurbSection.innerHTML = bioBlurbs[version];
 }
 
-const projects = document.getElementById("projects");
-const papers = document.getElementById("papers");
-const blurbSection = document.getElementById("interactive-bio-text");
+const projects = document.getElementById("projects-content");
+const papers = document.getElementById("papers-content");
 
 for (const proj of blocks.projects) {
   projects.appendChild(proj.render());
@@ -128,10 +132,22 @@ for (const paper of blocks.papers) {
 }
 
 setBioBlurb("Reader");
+
 document.querySelectorAll("#interactive-bio-nav button").forEach((btn) => {
   btn.addEventListener("click", () => {
     const value = btn.innerHTML;
     console.log(value);
     setBioBlurb(value);
   });
+});
+
+window.addEventListener("scroll", () => {
+  const navBar = document.getElementById("page-nav");
+  const landing = document.getElementById("landing");
+  // past landing, switch to absoloute nav bar
+  if (window.scrollY > landing.offsetHeight + landing.offsetTop) {
+    //navBar.className = "page-nav-scrolled";
+  }
+  // when in project, switch out projects button with Project header
+  // same for when in papers
 });

@@ -5,6 +5,7 @@
         <title>JD - Personal Site</title>
         <link rel="stylesheet" href="src/main.css" />
         <link rel="stylesheet" href="src/content.css" />
+        <link rel="stylesheet" href="src/nav.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
 
@@ -13,63 +14,69 @@
             <div id="landing-content">
                 <h1>Hi!</h1>
                 <h1>It's me,</h1>
-                <h1>Jared</h1>
-                <div class="page-nav">
-                    <nav>
-                        <a href="#projects">
-                            <button><h2>Projects</h2></button>
-                        </a>
-                        <a href="#papers">
-                            <button><h2>Papers</h2></button>
-                        </a>
-                    </nav>
-                </div>
+                <h1>Jared.</h1>
             </div>
         </div>
 
-        <div class="header">
-            <div class="header-content">
-                <img src="public/me.png" />
-                <div class="header-text">
-                    <div id="bio">
-                        <h1>A little about me...</h1>
-                        <p>
-                            I'm currently a junior at the College of William &
-                            Mary working towards a dual B.S. in Computational
-                            and Applied Mathematics and Statistics (Mathematical
-                            Biology) and Computer Science (Cyber Security). I'm
-                            a software engineer for the
-                            <a href="https://disinfolab.wm.edu/#/"
-                                >DisinfoLab</a
-                            >
-                            think tank / research group and volunteer for the
-                            <a href="https://nova.org"
-                                >Northern Virginia Internet Access Collective</a
-                            >!
-                        </p>
-                    </div>
-                    <div id="interactive-bio">
-                        <div id="interactive-bio-nav">
-                            <button>Reader</button>
-                            <button>Writer</button>
-                            <button>Runner</button>
-                            <button>Programmer</button>
+        <div id="page-nav" class="page-nav-initial">
+            <nav>
+                <a href="#projects">
+                    <h2>Projects</h2>
+                </a>
+                <a href="#papers">
+                    <h2>Papers</h2>
+                </a>
+            </nav>
+        </div>
+
+        <main class="body clearfix">
+            <div id="pre-main-filler"></div>
+
+            <div class="header clearfix">
+                <div class="header-content clearfix">
+                    <img src="public/me.png" />
+                    <div class="header-text clearfix">
+                        <div class="clearfix" id="bio">
+                            <h1>A little about me...</h1>
+                            <p>
+                                I'm currently a junior at the College of William
+                                & Mary working towards a dual B.S. in
+                                Computational and Applied Mathematics and
+                                Statistics (Mathematical Biology) and Computer
+                                Science (Cyber Security). I'm a software
+                                engineer for the
+                                <a href="https://disinfolab.wm.edu/#/"
+                                    >DisinfoLab</a
+                                >
+                                think tank / research group and volunteer for
+                                the
+                                <a href="https://nova.org"
+                                    >Northern Virginia Internet Access
+                                    Collective</a
+                                >!
+                            </p>
                         </div>
-                        <p id="interactive-bio-text"></p>
+                        <div class="clearfix" id="interactive-bio">
+                            <div class="clearfix" id="interactive-bio-nav">
+                                <button>Reader</button>
+                                <button>Writer</button>
+                                <button>Runner</button>
+                                <button>Programmer</button>
+                            </div>
+                            <p id="interactive-bio-text"></p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <main class="body">
-            <div class="body-block" id="projects">
+            <div class="body-block clearfix" id="projects">
                 <h2 class="content-banner">Projects</h2>
-                <div class="content-section"></div>
+                <div class="content-section" id="projects-content"></div>
             </div>
 
-            <div class="body-block" id="papers">
+            <div class="body-block clearfix" id="papers">
                 <h2 class="content-banner">Papers</h2>
-                <div class="content-section"></div>
+                <div class="content-section" id="papers-content"></div>
             </div>
         </main>
 
