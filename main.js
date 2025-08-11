@@ -57,7 +57,7 @@ const blocks = {
        simulation and graphs.
       `,
       "n/a",
-      "med_diffusion.pdf",
+      "public/med_diffusion.pdf",
       "med_diffusion.png",
     ),
     new PaperBlock(
@@ -70,7 +70,7 @@ const blocks = {
         as well as creating different data sets.
       `,
       "n/a",
-      "weatherman.pdf",
+      "public/weatherman.pdf",
       "weatherman.png",
     ),
     new PaperBlock(

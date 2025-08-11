@@ -1,4 +1,5 @@
 body {
+    scroll-behavior: smooth;
     margin-left: auto;
     margin-right: auto;
     background: linear-gradient(skyblue, rgb(46, 121, 151));
@@ -59,7 +60,7 @@ p {
 .body-block {
     display: block;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     min-height: 50vh;
 }
 
