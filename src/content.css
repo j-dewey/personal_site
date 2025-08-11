@@ -20,10 +20,10 @@
 
 .content-block {
     width: 75vw;
-    margin: 0.5em;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    padding: 0.25em;
+    margin: 0.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0.25rem;
     background-color: aliceblue;
     display: flex;
     vertical-align: middle;
@@ -53,7 +53,7 @@
 
 .content {
     display: block;
-    padding-left: 0.5em;
+    padding-left: 0.5rem;
 }
 
 .github-image {

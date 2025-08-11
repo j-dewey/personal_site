@@ -16,12 +16,12 @@
 }
 
 .page-nav-scrolled nav {
-    margin: 0.5em;
+    margin: 0.5rem;
 }
 
 #page-nav-name {
     margin: auto;
-    padding-right: 1em;
+    padding-right: 1rem;
 }
 
 #page-nav nav {
@@ -29,9 +29,9 @@
 }
 
 #page-nav a {
-    width: 10em;
+    width: 10rem;
     background-color: white;
-    margin: 0.25em;
+    margin: 0.25rem;
     border-radius: 10%;
     text-decoration: none;
     color: inherit;

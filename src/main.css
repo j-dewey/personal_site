@@ -11,7 +11,7 @@ h1 {
 }
 
 p {
-    font-size: 1.25em;
+    font-size: 1.25rem;
 }
 
 .clearfix::after {
@@ -31,14 +31,14 @@ p {
     display: flex;
     flex-direction: row;
     background-color: rgba(155, 155, 155, 0.5);
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
 }
 
 .header-content img {
     height: 50vh;
     border-radius: 50%;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin: auto;
 }
 
@@ -49,11 +49,11 @@ p {
 .header-text {
     display: block;
     text-align: center;
-    margin: 1em;
+    margin: 1rem;
 }
 
 .body {
-    width: 100vw;
+    width: 100%;
     height: auto;
 }
 
@@ -65,7 +65,7 @@ p {
 }
 
 .body-block h2 {
-    padding: 1em;
+    padding: 1rem;
     margin: auto;
 }
 
@@ -74,7 +74,7 @@ p {
 }
 
 #landing {
-    width: 100vw;
+    width: 100%;
     height: 60vh;
     margin-bottom: 0%;
     padding-bottom: 0%;
@@ -105,7 +105,7 @@ p {
 }
 
 #interactive-bio-text {
-    padding: 0.5em;
+    padding: 0.5rem;
     height: 100%;
     font-size: 1.5vw;
 }
