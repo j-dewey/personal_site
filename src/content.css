@@ -25,17 +25,8 @@
     margin-bottom: 1.5rem;
     padding: 0.25rem;
     background-color: aliceblue;
-    display: flex;
     vertical-align: middle;
     border-radius: 2.5%;
-}
-
-.content-block:nth-child(even) {
-    float: right;
-}
-
-.content-block:nth-child(odd) {
-    float: left;
 }
 
 .content-image {
