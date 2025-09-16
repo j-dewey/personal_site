@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <title>JD - Graphics Site</title>
+        <link rel="stylesheet" href="src/main.css" />
+        <link rel="stylesheet" href="src/graphics.css" />
+        <link rel="stylesheet" href="src/content.css" />
+        <link rel="stylesheet" href="src/nav.css" />
+        <link rel="stylesheet" href="src/cross-platform.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+
+    <body>
+        <div id="landing" style="height: 100vh">
+            <div id="landing-content">
+                <h1>Animation</h1>
+                <h1>&</h1>
+                <h1>Graphics</h1>
+                <h2>By Jared Dewey</h2>
+                <!---<nav>
+                    <h1 id="page-nav-name"></h1>
+                    <a href="#animations">
+                        <h2>Animations</h2>
+                    </a>
+                    <a href="#graphics">
+                        <h2>Graphics</h2>
+                    </a>
+                    </nav>----->
+            </div>
+        </div>
+
+        <main class="body clearfix">
+            <section
+                id="animations"
+                style="background-color: grey; height: 100vh"
+            >
+                <div>
+                    <h1>Now Playing</h1>
+                </div>
+                <div id="animation-cards" class="card-display"></div>
+            </section>
+        </main>
+
+        <script type="module" src="src/graphics.js"></script>
+    </body>
+</html>
